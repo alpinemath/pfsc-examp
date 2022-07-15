@@ -1,0 +1,13 @@
+# Requirements for running anywhere (browser or server)
+
+Jinja2
+MarkupSafe
+lark067==0.6.7
+mpmath
+
+# Also need sympy, but
+# (a) not for any of the functionality on which pfsc-server relies, and
+# (b) when needed, we install it from a neighboring directory.
+
+-e git+https://github.com/alpinemath/displaylang.git@2aef4d96bb6bc589537631a6b34ca7b37f3cbb24#egg=displaylang
+-e git+https://github.com/alpinemath/pfsc-util.git@be2c66e92a504aabb749a9eade2cef76aacd3660#egg=pfsc_util
